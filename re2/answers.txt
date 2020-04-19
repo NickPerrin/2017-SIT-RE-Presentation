@@ -1,0 +1,11 @@
+A1) 0x10 (16 decimal) bytes
+
+A2) The value `rbp - 0x10` will be placed into `rax`. This address is the top of the stack, which also contains the string "Hello, world!".
+
+A3) The string's address is placed into the `rdi` register, which serves as `arg0` in the standard function calling convention.
+
+A4) The argument is placed on the stack to preserve it following the `puts()` function call in case this pointer needs to be used again.  When a function is called, only the registers `rsp`, `rbp`, `rbx`, and `r12`-`r15` are guaranteed to be preserved. (see slide 0x32 notes for a link which goes over this a little bit)
+
+A5) 0x601040
+
+A6) .data
